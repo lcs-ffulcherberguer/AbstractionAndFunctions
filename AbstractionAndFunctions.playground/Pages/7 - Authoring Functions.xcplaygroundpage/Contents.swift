@@ -27,6 +27,75 @@ import Foundation
  */
 // Begin your work here...
 
+/// The Volume of the sphere
+/// - Parameter radius: radius of the sphere
+/// - Returns: the volume of the sphere
+func theVolumeSphere(radius: Double) -> Double? {
+    guard radius > 0 else {
+        //if doesn't work return to nil value
+        return nil
+    }
+    
+    return 4/3 * Double.pi * pow(radius, 3.0)
+    
+}
+
+/// The volume of the Cylinder
+/// - Parameters:
+///   - radius: radius of the cylinder
+///   - height: height of the cylinder
+/// - Returns: the volume of the cylinder
+func volumeOfCylinder(radius: Double, height: Double) -> Double? {
+    guard radius > 0, height > 0 else {
+        //if doesn't work return to nil value
+        return nil
+    }
+    
+    return Double.pi * height * pow(radius, 2.0)
+}
+
+/// The perimeter of a Rectangle
+/// - Parameters:
+///   - length: the length of the rectangle
+///   - width: the width of the rectangle
+/// - Returns: the perimeter of the rectangle
+func perimeterOfRectangle(length: Double, width: Double) -> Double? {
+    guard length > 0, width > 0 else {
+          //if doesn't work return to nil value
+        return nil
+    }
+    
+    return 2*(length+width)
+    
+}
+
+/// The surface of a sphere
+/// - Parameter radius: radius of the sphere
+/// - Returns: the surface areaof a sphere
+func surfaceAreaSphere(radius: Double) -> Double? {
+    guard radius > 0 else {
+        //if doesn't work return to nil value
+        return nil
+    }
+    
+    return 4 * Double.pi * pow(radius, 2.0)
+}
+
+/// The area of the Trapezoid
+/// - Parameters:
+///   - a: area
+///   - b: <#b description#>
+///   - height: the height of the trapezoid
+/// - Returns: the area of the Trapezoid
+func areaOfTrapezoid(a: Double, b: Double, height: Double) -> Double? {
+    guard a > 0, b > 0, height > 0 else {
+        //if doesn't work return to nil value
+        return nil
+    }
+    
+    return 1/2 * (a+b) * height
+}
+
 
 
 /*:
